@@ -15,8 +15,8 @@ To start playing you must type:
 
 To generate the board. To move a cell from the board, you must type:
 
-* ``the source row and column``.
-* ``the target row and column``.
+* ``source row`` `` source column``.
+* ``target row``  `` target column``.
 
 ### Prerequisites
 
