@@ -21,3 +21,15 @@ To generate the board. To move a cell from the board, you must type:
 ### Prerequisites
 
 If you are using Windows, you need to have [MinGW](http://www.mingw.org/wiki/HOWTO_Install_the_MinGW_GCC_Compiler_Suite) installed on your PC.
+
+## Running
+
+Maybe you don't remember how to compile/run a program in C++ (or don't know, no problems). So, let me remind you:
+
+``g++ candy.cpp -o candy.exe(or -o candy.out if are using a SO based in linux)``
+Then
+``./candy.exe``
+
+Or you can just do
+
+``g++ candy.cpp`` and then ``./a.exe``
