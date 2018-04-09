@@ -12,11 +12,12 @@ To start playing you must type:
 * ``D`` - The maximum amount of color on the board (3 <= D <= 8).
 * ``S`` - Seed for generation of pseudo-random numbers, any integer value.
 
-
 To generate the board. To move a cell from the board, you must type:
 
-* ``source row `` `` source column``.
-* ``target row `` `` target column``.
+* ``source row``
+* ``source column``
+* ``target row``
+* ``target column``
 
 ### Prerequisites
 
