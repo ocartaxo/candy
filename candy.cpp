@@ -493,13 +493,13 @@ bool ExisteMovimento(){
 int main(int argc, char* argv[]){
 
 	//Leitura da dimensao do tabuleiro
-	cout<<"Dimensao do tabuleiro: "<<endl;
+	cout<<"The board dimension: "<<endl;
 	cin>>N;
 
-	cout<<"Numero maximo de pecas diferentes: "<<endl;
+	cout<<"The maximum amount of color on the board: "<<endl;
 	cin>>D;
 
-	cout<<"Informe a semente pseudoaleatoria: "<<endl;
+	cout<<"Seed for generation of pseudo-random numbers, any integer value: "<<endl;
 	cin>>S;
 
 	// Alimentando o gerador de numero pseudoaleatorios
@@ -511,39 +511,39 @@ int main(int argc, char* argv[]){
 
 	do{
 
-		cout<<"Linha origem: ";
+		cout<<"Source row: ";
 		cin>>linha;
-		cout<<"Coluna origem: ";
+		cout<<"Source column: ";
 		cin>>coluna;
 		mover.origem = make_pair (linha,coluna);
 
-		cout<<"Linha destino: ";
+		cout<<"Target row: ";
 		cin>>linha;
-		cout<<"Coluna destino: ";
+		cout<<"Target column: ";
 		cin>>coluna;
 		mover.destino = make_pair (linha,coluna);
 
 		if(!MovimentoEhValido()){
-			cout << "O seu movimento eh invalido.";
-			cout << "Por favor, faca outro movimento." << endl;
+			cout << "Your movement is invalid.";
+			cout << "Please, make another move." << endl;
 			continue;
 		}
 
 		MovePeca();
 		pontos = CalculaPontuacao();
-		cout<<"Pontos Obtidos: "<< pontos <<endl;
+		cout<<"Score: "<< pontos <<endl;
 		pontosTotal += pontos;
 
 		ImprimeTabuleiro();
 		ReConstroiTabuleiro();
 
-		cout<<"\nTabuleiro atual: "<<endl;
+		cout<<"\nCurrent board: "<<endl;
 		ImprimeTabuleiro();
 
 	}while(ExisteMovimento());
 
-	cout << "Fim de jogo." << endl;
-	cout << "Pontuacao Total: " << pontosTotal << endl;
+	cout << "End of the game." << endl;
+	cout << "Total score: " << pontosTotal << endl;
 
 
 	return 0;
